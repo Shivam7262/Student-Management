@@ -40,18 +40,6 @@ public class StudentController {
     }
 
     //For update
-//@PutMapping("/students/update/{id}")
-//public Student updateStudents(@PathVariable int id, @RequestBody Student updatedStudent) {
-//    Student student = repo.findById(id).orElse(null);
-//
-//    if (student != null) {
-//        student.setName("Abhinav");
-//        student.setPercentage(88);
-//        return repo.save(student);
-//    } else {
-//        return null; // Or you can throw a custom exception later if you want
-//    }
-//}
     @PutMapping("/students/update/{id}")
     public Student updateStudents(@PathVariable int id, @RequestBody Student updatedStudent) {
         System.out.println("🔄 Update request for ID: " + id);
